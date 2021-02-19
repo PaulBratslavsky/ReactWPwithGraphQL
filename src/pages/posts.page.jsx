@@ -11,13 +11,7 @@ export default function Posts() {
   if (error) return <h2>Error: {error.message}</h2>
 
   const posts = data.posts.nodes;
-
-  console.log(posts, "From Graph QL")
-
-  function simpleStripHTML(htmlString) {
-    return htmlString.replace(/<[^>]*>?/gm, '')
-  }
-
+  
   return (
     <div>
       All Post
